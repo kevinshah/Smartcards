@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.admin.smartcards" >
+
+    <uses-sdk android:minSdkVersion="11" />
+        
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+ 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".DeckList"
+            android:label="@string/title_activity_deck_list"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".CreateCard"
+            android:label="@string/title_activity_create_card"
+            android:parentActivityName=".DeckList"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.admin.smartcards.DeckList" />
+        </activity>
+        <activity
+            android:name=".CreateCardFront"
+            android:label="@string/title_activity_create_card"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".CreateCardBack"
+            android:label="@string/title_activity_create_card_back"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".DeckOpen"
+            android:label="@string/title_activity_deck_open"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".CardFront"
+            android:label="@string/title_activity_card_front"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".CardBack"
+            android:label="@string/title_activity_card_back"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".ScoreScreen"
+            android:label="@string/title_activity_score_screen"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".testclass"
+            android:label="@string/title_activity_testclass" >
+        </activity>
+        <activity
+            android:name=".CreateAccount"
+            android:label="@string/title_activity_create_account"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".DownloadDeck"
+            android:label="@string/title_activity_download_deck"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".DownloadConfirm"
+            android:label="@string/title_activity_download_confirm"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".EditCard"
+            android:label="@string/title_activity_edit_card"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".EditDeck"
+            android:label="@string/title_activity_edit_deck"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".testocr"
+            android:label="@string/title_activity_test_ocr"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+    </application>
+
+</manifest>

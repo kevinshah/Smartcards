@@ -1,0 +1,119 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.admin.smartcards.CreateCard"
+    android:background="@drawable/bg">
+
+
+
+    <Button
+            android:background="@drawable/custom_btn_beige"
+            android:textColor="@android:color/white"
+            android:layout_width="250dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/DoneButton"
+            android:text="Done"
+            android:textSize="20dp"
+            android:onClick="goDone"
+            android:scaleType="fitCenter"
+ />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/viewTitle"
+        android:layout_below="@+id/DoneButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:text="Title Goes Here"
+        android:textSize="25dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:padding="0dp"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/viewCourse"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:text="Course Goes Here"
+        android:textSize="20dp"
+        android:layout_below="@+id/viewTitle"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textColor="#ffffff" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="210dp"
+        android:id="@+id/enterCardBack"
+        android:layout_below="@+id/viewCourse"
+        android:ellipsize="start"
+        android:gravity="center_vertical|center_horizontal"
+        android:hint="Enter Card Back"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_margin="20dp"
+        android:background="#ffffffff"
+        android:imeOptions="actionDone"
+        android:inputType="textAutoCorrect" />
+
+    <ImageButton
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:onClick="voicerecord"
+        android:src="@drawable/voice"
+        android:background="@android:color/transparent"
+        android:id="@+id/button5"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentEnd="false"
+        android:layout_alignBottom="@+id/enterCardBack"
+        android:layout_alignLeft="@+id/enterCardBack"
+        android:scaleType="fitCenter"
+        android:padding="10dp" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:id="@+id/Forward"
+        android:layout_gravity="bottom"
+        android:hint="Enter Another Card"
+        android:textSize="18dp"
+        android:background="@color/white"
+        android:onClick="nextCard"
+        android:layout_below="@+id/enterCardBack"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:paddingTop="50dp" />
+
+    <ImageButton
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:onClick="ocrrecord"
+        android:src="@drawable/camera"
+        android:background="@android:color/transparent"
+        android:id="@+id/imageButton"
+        android:scaleType="fitCenter"
+        android:padding="7.5dp"
+        android:layout_alignBottom="@+id/enterCardBack"
+        android:layout_alignRight="@+id/enterCardBack"
+        android:layout_alignEnd="@+id/enterCardBack" />
+
+</RelativeLayout>

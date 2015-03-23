@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SmartCards</string>
+    <string name="name">Name</string>
+    <string name="user_name">User Name</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="action_settings">Settings</string>
+    <string name="create_deck">Create New Deck</string>
+    <string name="settings_button">Settings</string>
+    <string name="my_decks_button">My Decks</string>
+    <string name="cloud_button">Other Decks</string>
+
+    <color name="white">#FFFFFF</color>
+
+    <string name="title_activity_deck_list">DeckList</string>
+    <string name="title_activity_create_card">CreateCard</string>
+    <string name="title_activity_create_card_back">CreateCardBack</string>
+    <string name="title_activity_deck_open">DeckOpen</string>
+    <string name="title_activity_card_front">CardFront</string>
+    <string name="title_activity_card_back">CardBack</string>
+    <string name="title_activity_score_screen">ScoreScreen</string>
+    <string name="title_activity_testclass">testclass</string>
+    <string name="title_activity_create_account">CreateAccount</string>
+    <string name="title_activity_download_deck">DownloadDeck</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_download_confirm">DownloadConfirm</string>
+    <string name="title_activity_edit_card">EditCard</string>
+    <string name="title_activity_edit_deck">EditDeck</string>
+    <string name="title_activity_test_ocr">testocr</string>
+    <string name="select">Select</string>
+    <string name="downloadeck">Download Deck</string>
+
+    <string-array name="searchList">
+        <item>Course</item>
+        <item>Decks</item>
+    </string-array>
+</resources>

@@ -1,0 +1,105 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.admin.smartcards.ScoreScreen"
+    android:background="@drawable/bg">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="40dp">
+
+        <TextView
+            android:layout_width="194dp"
+            android:layout_height="wrap_content"
+            android:text="Right"
+            android:textColor="#fff"
+            android:textSize="32sp" />
+
+        <TextView
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:text="Right"
+            android:id="@+id/Right"
+            android:textColor="#ffc3d13f"
+            android:textSize="32sp"
+            android:layout_weight="1"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="194dp"
+            android:layout_height="wrap_content"
+            android:text="Wrong"
+            android:textColor="#fff"
+            android:textSize="32sp" />
+
+        <TextView
+            android:layout_width="165dp"
+            android:layout_height="wrap_content"
+            android:text="Wrong"
+            android:id="@+id/Wrong"
+            android:textColor="#ffd6755b"
+            android:textSize="32sp"
+            android:layout_weight="1"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="194dp"
+            android:layout_height="wrap_content"
+            android:text="Percent"
+            android:textColor="#fff"
+            android:textSize="32sp" />
+
+        <TextView
+            android:layout_width="194dp"
+            android:layout_height="wrap_content"
+            android:text="Percent"
+            android:id="@+id/Score"
+            android:textColor="#ffc3d13f"
+            android:textStyle="bold"
+            android:textSize="32sp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="75dp"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout"
+        android:layout_alignParentBottom="true">
+
+        <Button android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/custom_btn_beige"
+            android:id="@+id/button3"
+            android:text="Redo"
+            android:onClick="TryDoneButton"
+            android:scaleType="fitCenter"
+
+            android:textSize="20dp"
+            android:textColor="#ffffffff"
+            android:layout_margin="10dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/custom_btn_beige"
+            android:id="@+id/button4"
+            android:text="Done"
+            android:onClick="TryDoneButton"
+            android:scaleType="fitCenter"
+            android:layout_margin="10dp"
+            android:textSize="20dp"
+            android:textColor="#ffffffff" />
+
+    </LinearLayout>
+
+</RelativeLayout>
